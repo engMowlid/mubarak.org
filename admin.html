@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>MASaD Admin</title>
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <!-- Login -->
+    <main id="loginView" class="login" hidden>
+        <section class="login-art">
+            <img src="./images/logo.png" alt="" class="login-art-logo">
+            <h2>Mubarak Association for Sustainable Development</h2>
+            <p>Manage your projects, programs, impact numbers, partners and news - in English, Somali and Arabic.</p>
+        </section>
+        <section class="login-pane">
+            <form id="loginForm" class="login-card" autocomplete="on">
+                <img src="./images/logo.png" alt="MASaD" class="login-logo">
+                <h1>Welcome back</h1>
+                <p class="muted">Log in to manage the website.</p>
+                <label>Email
+                    <span class="input-icon"><i class="fas fa-envelope"></i><input type="email" name="email" autocomplete="username" required placeholder="you@example.com"></span>
+                </label>
+                <label>Password
+                    <span class="input-icon"><i class="fas fa-lock"></i><input type="password" name="password" autocomplete="current-password" required placeholder="Your password"></span>
+                </label>
+                <button class="btn primary block" type="submit"><i class="fas fa-right-to-bracket"></i> Log in</button>
+                <p id="loginError" class="error" role="alert"></p>
+                <p id="loginOk" class="ok-msg" role="status"></p>
+                <p class="forgot-row center"><button type="button" id="forgotLink" class="link-btn">Forgot password?</button></p>
+                <a href="index.html" class="muted small back-link"><i class="fas fa-arrow-left"></i> Back to website</a>
+            </form>
+            <form id="forgotForm" class="login-card" autocomplete="on" novalidate hidden>
+                <img src="./images/logo.png" alt="MASaD" class="login-logo">
+                <h1>Reset password</h1>
+                <p class="muted">Enter your admin email. We will send you a link to choose a new password.</p>
+                <label>Email
+                    <span class="input-icon"><i class="fas fa-envelope"></i><input type="email" name="email" autocomplete="username" required placeholder="you@example.com"></span>
+                </label>
+                <button class="btn primary block" type="submit"><i class="fas fa-paper-plane"></i> Send reset link</button>
+                <p id="forgotError" class="error" role="alert"></p>
+                <p id="forgotOk" class="ok-msg" role="status"></p>
+                <p class="forgot-row center"><button type="button" id="forgotBack" class="link-btn"><i class="fas fa-arrow-left"></i> Back to log in</button></p>
+            </form>
+            <form id="resetForm" class="login-card" autocomplete="off" novalidate hidden>
+                <img src="./images/logo.png" alt="MASaD" class="login-logo">
+                <h1>Choose a new password</h1>
+                <p class="muted">At least 10 characters.</p>
+                <label>New password
+                    <span class="input-icon"><i class="fas fa-lock"></i><input type="password" name="password" autocomplete="new-password" required placeholder="New password"></span>
+                </label>
+                <label>Repeat new password
+                    <span class="input-icon"><i class="fas fa-lock"></i><input type="password" name="password2" autocomplete="new-password" required placeholder="Repeat new password"></span>
+                </label>
+                <button class="btn primary block" type="submit"><i class="fas fa-check"></i> Save new password</button>
+                <p id="resetError" class="error" role="alert"></p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Dashboard -->
+    <div id="appView" class="app" hidden>
+        <aside class="sidebar" id="sidebar">
+            <div class="side-brand"><img src="./images/logo.png" alt=""><div><strong>MASaD</strong><span>Admin dashboard</span></div></div>
+            <nav id="nav" class="nav" aria-label="Sections"></nav>
+            <div class="side-foot">
+                <div class="me"><span class="avatar" id="avatar">A</span><div><strong id="whoami"></strong><span>Administrator</span></div></div>
+                <a class="side-link" href="index.html" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square"></i> View website</a>
+                <button class="side-link" id="logoutBtn" type="button"><i class="fas fa-right-from-bracket"></i> Log out</button>
+            </div>
+        </aside>
+        <div id="scrim" class="scrim" hidden></div>
+
+        <div class="main">
+            <div class="topbar"><button type="button" id="menuBtn" class="menu-btn" aria-label="Open menu" aria-controls="sidebar" aria-expanded="false"><i class="fas fa-bars"></i></button><img src="./images/logo.png" alt=""><strong>MASaD Admin</strong></div>
+            <header class="page-head">
+                <div>
+                    <h1 id="sectionTitle"></h1>
+                    <p id="sectionDesc" class="muted"></p>
+                </div>
+                <div class="head-actions">
+                    <span class="search" id="searchWrap"><i class="fas fa-magnifying-glass"></i><input id="search" type="search" placeholder="Search..." aria-label="Search"></span>
+                    <button class="btn gold" id="addBtn" type="button"></button>
+                </div>
+            </header>
+            <p id="listMsg" class="muted msg"></p>
+            <div id="view"></div>
+        </div>
+
+        <!-- Add / edit panel -->
+        <div id="modal" class="modal" hidden>
+            <form id="itemForm" class="panel" novalidate>
+                <div class="panel-head">
+                    <h3 id="formTitle"></h3>
+                    <button type="button" class="icon-btn" id="closeForm" aria-label="Close"><i class="fas fa-xmark"></i></button>
+                </div>
+                <div class="lang-switch" id="langSwitch" role="tablist" aria-label="Language"></div>
+                <div class="panel-body" id="fields"></div>
+                <div class="panel-foot">
+                    <p id="formError" class="error" role="alert"></p>
+                    <div class="foot-btns">
+                        <button type="button" class="btn" id="cancelForm">Cancel</button>
+                        <button type="submit" class="btn primary" id="saveBtn"><i class="fas fa-check"></i> Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Add admin panel -->
+    <div id="adminModal" class="modal" hidden>
+        <form id="adminForm" class="panel narrow" novalidate autocomplete="off">
+            <div class="panel-head">
+                <h3>Add an administrator</h3>
+                <button type="button" class="icon-btn" id="closeAdmin" aria-label="Close"><i class="fas fa-xmark"></i></button>
+            </div>
+            <div class="panel-body" id="adminFields"></div>
+            <div class="panel-foot">
+                <p id="adminError" class="error" role="alert"></p>
+                <div class="foot-btns">
+                    <button type="button" class="btn" id="cancelAdmin">Cancel</button>
+                    <button type="submit" class="btn primary" id="saveAdmin"><i class="fas fa-user-plus"></i> Add admin</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+    <script src="vendor/supabase.js"></script>
+    <script src="config.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

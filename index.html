@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mubarak Association for Sustainable and Development (MASaD)</title>
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="MASaD Logo" class="logo-img">
+                    <span>MASaD</span>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html" data-translate="home">Home</a></li>
+                        <li class="dropdown">
+                            <a href="index.html#about" data-translate="about-us">About Us <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html#about" data-translate="who-we-are">Who We Are</a></li>
+                                <li><a href="vision.html" data-translate="our-vision">Our Vision</a></li>
+                                <li><a href="mission.html" data-translate="our-mission">Our Mission</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="index.html#programs" data-translate="our-programs">Our Programs <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="education.html" data-translate="education-all">Education</a></li>
+                                <li><a href="healthcare.html" data-translate="healthcare-access">Healthcare Services</a></li>
+                                <li><a href="women-empowerment.html" data-translate="women-empower">Women Empowerment</a></li>
+                                <li><a href="child-protection.html" data-translate="advocacy-program">Advocacy & Human Rights</a></li>
+                                <li><a href="livelihood.html" data-translate="livelihood-support">Resilience & Livehoods</a></li>
+                                <li><a href="environment.html" data-translate="community-dev-program">Community Development</a></li>
+                                <li><a href="climate-change.html" data-translate="climate-change-program">Climate Change</a></li>
+                                <li><a href="security-awareness.html" data-translate="security-program">Security Awareness & Risk Management</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html#projects" data-translate="our-projects">Our Projects</a></li>
+                        <li><a href="index.html#impact" data-translate="our-impact">Our Impact</a></li>
+                        <li><a href="index.html#news" data-translate="news-updates">News & Updates</a></li>
+                        <li><a href="index.html#get-involved" data-translate="get-involved">Get Involved</a></li>
+                        <li><a href="index.html#contact" data-translate="contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="donate-btn" onclick="window.location.href='donate.html'" data-translate="donate-now">Donate Now</button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <h1 data-translate="hero-title">Mubarak Association for Sustainable and Development (MASaD)</h1>
+                <p data-translate="hero-subtitle">Is a non-profit organization dedicated to building resilient communities for sustainable development. We work to empower communities through sustainable development programs, advocacy, and humanitarian assistance in Somalia and beyond.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="window.location.href='donate.html'" data-translate="donate-now">Donate Now</button>
+                    <button class="btn-secondary" onclick="document.getElementById('programs').scrollIntoView({behavior:'smooth'})" data-translate="explore-work">Explore Our Work</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Focus Areas Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="focus-areas">Our Focus Areas</h2>
+                <p data-translate="focus-subtitle">We are committed to making a sustainable impact through our key focus areas.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 data-translate="sustainable-dev">Sustainable Development</h3>
+                    <p data-translate="sustainable-dev-text">Promoting long-term sustainable solutions for community growth and environmental stewardship.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-female"></i>
+                    </div>
+                    <h3 data-translate="women-youth">Women & Youth Empowerment</h3>
+                    <p data-translate="women-youth-text">Empowering women and youth through education, skills training, and leadership opportunities.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 data-translate="community-dev">Community Development</h3>
+                    <p data-translate="community-dev-text">Building strong, resilient communities through collaborative development initiatives.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 data-translate="advocacy">Advocacy & Human Rights</h3>
+                    <p data-translate="advocacy-text">Advocating for human rights and social justice for vulnerable populations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 data-translate="climate">Climate Change & Environmental Protection</h3>
+                    <p data-translate="climate-text">Addressing climate challenges and protecting the environment for future generations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 data-translate="capacity">Capacity Building & Education</h3>
+                    <p data-translate="capacity-text">Enhancing skills and knowledge through educational programs and capacity building.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 data-translate="resilience">Resilience & Livehoods</h3>
+                    <p data-translate="resilience-text">Building economic resilience and sustainable livelihoods for communities.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 data-translate="security">Security Awareness & Risk Management</h3>
+                    <p data-translate="security-text">Promoting security awareness and effective risk management strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="./images/whow.jpeg" alt="who we are">
+                </div>
+                <div class="about-text">
+                    <h2 data-translate="who-we-are">Who We Are</h2>
+                    <p data-translate="who-we-are-text"><strong>Mubarak Association for Sustainable Development (MASaD)</strong> is a non-profit, non-governmental organization established in Baidoa south west state of Somalia, on 17 October 2020 and committed to promoting sustainable development and building resilient communities in South West State of Somalia and beyond.</p>
+                    
+                    <div class="mission-vision">
+                        <div class="mv-card">
+                            <div class="mv-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <h3 data-translate="our-mission">Our Mission</h3>
+                            <p data-translate="mission-text">To provide humanitarian assistance and sustainable development programs that empower communities to overcome challenges and build brighter futures.</p>
+                            <a href="mission.html" class="learn-more" data-translate="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="mv-card">
+                            <div class="mv-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h3 data-translate="our-vision">Our Vision</h3>
+                            <p data-translate="vision-text">A world where every individual has access to basic necessities, opportunities for growth, and the hope for a better tomorrow.</p>
+                            <a href="vision.html" class="learn-more" data-translate="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Empowering Communities Section -->
+    <section id="programs" class="programs">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="empowering">Empowering Communities</h2>
+                <p data-translate="empowering-subtitle">Our programs are designed to create sustainable impact and empower communities to build self-sufficient futures.</p>
+                <button class="btn-outline" data-translate="view-all-programs">View All Programs</button>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <img src="./images/school.jpeg" alt="Education Program">
+                    <h3 data-translate="education-all">Education </h3>
+                    <p data-translate="education-all-text">Providing quality education and learning resources to children in underserved communities.</p>
+                    <a href="education.html" class="learn-more" data-translate="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="program-card">
+                    <img src="./images/peo.jpeg" alt="Healthcare Program">
+                    <h3 data-translate="healthcare-access">Healthcare Services</h3>
+                    <p data-translate="healthcare-access-text">Delivering essential healthcare services and medical supplies to remote areas.</p>
+                    <a href="healthcare.html" class="learn-more" data-translate="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="program-card">
+                    <img src="./images/scooo.jpeg" alt="Women Empowerment">
+                    <h3 data-translate="women-empower">Women Empowerment</h3>
+                    <p data-translate="women-empower-text">Supporting women through skills training, microfinance, and leadership programs.</p>
+                    <a href="women-empowerment.html" class="learn-more" data-translate="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="program-card">
+                    <img src="./images/advocacy.jpeg" alt="Advocacy">
+                    <h3 data-translate="advocacy-program">Advocacy & Human Rights</h3>
+                    <p data-translate="advocacy-program-text">Advocating for human rights and social justice for vulnerable populations through policy change and community engagement.</p>
+                    <a href="child-protection.html" class="learn-more" data-translate="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="program-card">
+                    <img src="./images/livelhood.jpeg" alt="Livelihood Support">
+                    <h3 data-translate="livelihood-support">Resilience & Livehoods</h3>
+                    <p data-translate="livelihood-support-text">Creating economic opportunities through vocational training and small business support.</p>
+                    <a href="livelihood.html" class="learn-more" data-translate="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="program-card">
+                    <img src="./images/community2.jpg" alt="Community Development">
+                    <h3 data-translate="community-dev-program">Community Development</h3>
+                    <p data-translate="community-dev-program-text">Building strong, resilient communities through collaborative development initiatives and infrastructure projects.</p>
+                    <a href="environment.html" class="learn-more" data-translate="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="program-card">
+                    <img src="./images/climate.jpeg" alt="Climate Change">
+                    <h3 data-translate="climate-change-program">Climate Change</h3>
+                    <p data-translate="climate-change-program-text">Addressing climate challenges through environmental protection, sustainable practices, and community resilience building.</p>
+                    <a href="climate-change.html" class="learn-more" data-translate="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="program-card">
+                    <img src="./images/security.jpeg" alt="Security Awareness">
+                    <h3 data-translate="security-program">Security Awareness & Risk Management</h3>
+                    <p data-translate="security-program-text">Promoting security awareness and effective risk management strategies to protect communities.</p>
+                    <a href="security-awareness.html" class="learn-more" data-translate="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="turning-support">Turning Support into Real Impact</h2>
+                <p data-translate="turning-subtitle">Our projects are making a tangible difference in communities across the regions we serve.</p>
+                <button class="btn-outline" id="toggleProjects" type="button" aria-expanded="false"><span class="vp-more" data-translate="view-all-projects">View All Projects</span><span class="vp-less" data-translate="show-fewer" hidden>Show Fewer</span></button>
+            </div>
+            <div class="projects-carousel" id="projectsCarousel">
+                <a class="project-card" href="education.html">
+                    <div class="project-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 data-translate="education-all">Education for All</h3>
+                    <p class="location" data-translate="somalia-loc">Somalia</p>
+                    <span class="status completed" data-translate="completed">Completed</span>
+                </a>
+                <a class="project-card" href="healthcare.html">
+                    <div class="project-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 data-translate="healthcare-access">Healthcare Access</h3>
+                    <p class="location" data-translate="somalia-loc">Somalia</p>
+                    <span class="status completed" data-translate="completed">Completed</span>
+                </a>
+                <a class="project-card" href="women-empowerment.html">
+                    <div class="project-icon">
+                        <i class="fas fa-female"></i>
+                    </div>
+                    <h3 data-translate="women-empower">Women Empowerment</h3>
+                    <p class="location" data-translate="somalia-loc">Somalia</p>
+                    <span class="status completed" data-translate="completed">Completed</span>
+                </a>
+                <a class="project-card" href="child-protection.html">
+                    <div class="project-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 data-translate="advocacy-program">Advocacy </h3>
+                    <p class="location" data-translate="somalia-loc">Somalia</p>
+                    <span class="status completed" data-translate="completed">Completed</span>
+                </a>
+                <a class="project-card project-extra" href="livelihood.html">
+                    <div class="project-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 data-translate="livelihood-support">Resilience & Livehoods</h3>
+                    <p class="location" data-translate="somalia-loc">Somalia</p>
+                    <span class="status completed" data-translate="completed">Completed</span>
+                </a>
+                <a class="project-card project-extra" href="environment.html">
+                    <div class="project-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 data-translate="community-dev-program">Community Development</h3>
+                    <p class="location" data-translate="somalia-loc">Somalia</p>
+                    <span class="status completed" data-translate="completed">Completed</span>
+                </a>
+                <a class="project-card project-extra" href="climate-change.html">
+                    <div class="project-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 data-translate="climate-change-program">Climate Change</h3>
+                    <p class="location" data-translate="somalia-loc">Somalia</p>
+                    <span class="status ongoing" data-translate="ongoing">Ongoing</span>
+                </a>
+                <a class="project-card project-extra" href="security-awareness.html">
+                    <div class="project-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 data-translate="security-program">Security Awareness & Risk Management</h3>
+                    <p class="location" data-translate="somalia-loc">Somalia</p>
+                    <span class="status ongoing" data-translate="ongoing">Ongoing</span>
+                </a>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" type="button" aria-label="Previous" onclick="moveCarousel('projects', -1)"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next" type="button" aria-label="Next" onclick="moveCarousel('projects', 1)"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Statistics Section -->
+    <section id="impact" class="impact">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="real-people">Our Impact</h2>
+                <p data-translate="real-subtitle">The numbers tell the story of our collective impact and the lives we've transformed together.</p>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-icon"><i class="fas fa-users"></i></div>
+                    <h3 class="counter" data-target="250" data-suffix="+">0</h3>
+                    <p data-translate="families-served">Families Served</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon"><i class="fas fa-heart"></i></div>
+                    <h3 class="counter" data-target="7">0</h3>
+                    <p data-translate="lives-impacted">Lives Impacted</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon"><i class="fas fa-project-diagram"></i></div>
+                    <h3 class="counter" data-target="6">0</h3>
+                    <p data-translate="projects-completed">Projects Completed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section id="partnership" class="partnership">
+        <div class="container">
+            <div class="partnership-card">
+                <div class="partnership-badge"><img src="./images/untmis-logo.jpg" alt="UNTMIS logo"></div>
+                <div class="partnership-body">
+                    <span class="partnership-label" data-translate="partnership-title">Our Partnership</span>
+                    <h2>UNTMIS</h2>
+                    <h3 data-translate="partnership-sub">United Nations Transitional Assistance Mission in Somalia</h3>
+                    <p data-translate="partnership-text">We are proud to have a partnership with UNTMIS, working together to support communities across in South West State Somalia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="latest-news">Latest News & Stories</h2>
+                <p data-translate="latest-news-subtitle">Stay updated with our latest initiatives, success stories, and news from the field.</p>
+                <button class="btn-outline" data-translate="view-all-news">View All News</button>
+            </div>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="./images/climate.jpeg" alt="Climate Change">
+                    <h3 data-translate="climate-change-program">Climate Change</h3>
+                    <p data-translate="climate-change-program-text">Addressing climate challenges through environmental protection, sustainable practices, and community resilience building.</p>
+                    <a href="climate-change.html" class="read-more" data-translate="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="news-card">
+                    <img src="./images/community2.jpg" alt="Community Development">
+                    <h3 data-translate="community-dev-program">Community Development</h3>
+                    <p data-translate="community-dev-program-text">Building strong, resilient communities through collaborative development initiatives and infrastructure projects.</p>
+                    <a href="environment.html" class="read-more" data-translate="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="news-card">
+                    <img src="./images/wome.jpeg" alt="Women Empowerment">
+                    <h3 data-translate="women-empower">Women Empowerment</h3>
+                    <p data-translate="women-empower-text">Supporting women through skills training, microfinance, and leadership programs.</p>
+                    <a href="women-empowerment.html" class="read-more" data-translate="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="get-involved" class="cta">
+        <div class="cta-overlay"></div>
+        <div class="container">
+                <div class="cta-content">
+                    <h2 data-translate="be-part">Be Part of the Change</h2>
+                    <p data-translate="be-part-subtitle">Your support can transform lives. Join us in making a difference today through donation, volunteering, or partnership.</p>
+                    <div class="cta-buttons">
+                        <button class="btn-primary" onclick="window.location.href='donate.html'" data-translate="donate-now">Donate Now</button>
+                        <button class="btn-secondary" data-prefill="prefill-volunteer" data-translate="volunteer">Volunteer</button>
+                        <button class="btn-secondary" data-prefill="prefill-partner" data-translate="partner">Partner With Us</button>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="get-in-touch">Get in Touch</h2>
+                <p data-translate="get-in-touch-subtitle">Have questions or want to learn more about our work? We'd love to hear from you.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3 data-translate="location">Location</h3>
+                            <p data-translate="baidoa-somalia">Baidoa-Somalia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3 data-translate="phone">Phone</h3>
+                            <p>+252615833023 / +252613535457</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3 data-translate="email-label">Email</h3>
+                            <p>info.masad01@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <h3 data-translate="send-message">Send us a Message</h3>
+                    <form class="contact-form" id="contactForm" data-subject="New message from the MASaD website">
+                        <div class="form-group">
+                            <label for="name" data-translate="full-name">Full Name</label>
+                            <input type="text" id="name" name="name" data-placeholder="ph-name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-translate="email-address">Email Address</label>
+                            <input type="email" id="email" name="email" data-placeholder="ph-email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" data-translate="phone-number">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" data-placeholder="ph-phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-translate="message">Message</label>
+                            <textarea id="message" name="message" rows="5" data-placeholder="your-message" placeholder="Your message" required></textarea>
+                        </div>
+                        <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> <span data-translate="send-msg">Send Message</span>
+                        </button>
+                        <div class="form-status" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-about">
+                    <div class="footer-logo">
+                        <img src="./images/logo.png" alt="MASaD Logo" class="logo-img">
+                        <span>MASaD</span>
+                    </div>
+                    <p data-translate="footer-slogan">Building Resilient Communities for Sustainable Development.</p>
+                    <h4 class="footer-follow" data-translate="follow-us">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61570262667139&amp;mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="quick-links">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span data-translate="home">Home</span></a></li>
+                        <li><a href="index.html#about"><i class="fas fa-chevron-right"></i> <span data-translate="about-us">About Us</span></a></li>
+                        <li><a href="index.html#programs"><i class="fas fa-chevron-right"></i> <span data-translate="our-programs">Our Programs</span></a></li>
+                        <li><a href="index.html#projects"><i class="fas fa-chevron-right"></i> <span data-translate="our-projects">Our Projects</span></a></li>
+                        <li><a href="index.html#impact"><i class="fas fa-chevron-right"></i> <span data-translate="our-impact">Our Impact</span></a></li>
+                        <li><a href="donate.html"><i class="fas fa-chevron-right"></i> <span data-translate="donate-now">Donate Now</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="contact-info">Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-translate="baidoa-somalia">Baidoa, Somalia</span></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+252615833023" dir="ltr">+252615833023 / +252613535457</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info.masad01@gmail.com">info.masad01@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="newsletter">Newsletter</h3>
+                    <p data-translate="newsletter-text">Subscribe to our newsletter for updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" data-placeholder="email-placeholder" placeholder="Your email" aria-label="Email">
+                        <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p data-translate="copyright">© 2026 Mubarak Association for Sustainable and Development (MASaD). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <select id="languageSelect" class="lang-dropdown">
+            <option value="en">English</option>
+            <option value="so">Somali</option>
+            <option value="ar">العربية</option>
+        </select>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="vendor/supabase.js"></script>
+    <script src="config.js"></script>
+    <script src="cms.js"></script>
+</body>
+</html>
+
+

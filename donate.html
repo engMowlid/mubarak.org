@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - MASaD</title>
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="MASaD Logo" class="logo-img">
+                    <span>MASaD</span>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html" data-translate="home">Home</a></li>
+                        <li><a href="index.html#about" data-translate="about-us">About Us</a></li>
+                        <li><a href="index.html#programs" data-translate="our-programs">Our Programs</a></li>
+                        <li><a href="index.html#projects" data-translate="our-projects">Our Projects</a></li>
+                        <li><a href="index.html#impact" data-translate="our-impact">Our Impact</a></li>
+                        <li><a href="index.html#news" data-translate="news-updates">News & Updates</a></li>
+                        <li><a href="index.html#get-involved" data-translate="get-involved">Get Involved</a></li>
+                        <li><a href="index.html#contact" data-translate="contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="donate-btn" data-translate="donate-now">Donate Now</button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Donate Section -->
+    <section class="donate-page">
+        <div class="container">
+            <div class="donate-layout">
+                <div class="donate-intro">
+                    <h1 data-translate="make-donation">Make a Donation</h1>
+                    <p data-translate="donation-subtitle">Your support helps us build resilient communities for sustainable development. Every contribution makes a difference in the lives of those we serve.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3 data-translate="location">Location</h3>
+                                <p data-translate="baidoa-somalia">Baidoa, Somalia</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3 data-translate="phone">Phone</h3>
+                                <p dir="ltr">+252615833023 / +252613535457</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3 data-translate="email-label">Email</h3>
+                                <p>info.masad01@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <h3 data-translate="donate-form-title">Donation Form</h3>
+                    <form class="contact-form" id="donateForm" data-subject="New donation request from the MASaD website">
+                        <div class="form-group">
+                            <label for="name" data-translate="full-name">Full Name</label>
+                            <input type="text" id="name" name="name" data-placeholder="ph-name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-translate="email-address">Email Address</label>
+                            <input type="email" id="email" name="email" data-placeholder="ph-email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" data-translate="phone-number">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" data-placeholder="ph-phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-translate="donate-message">How would you like to donate or support us?</label>
+                            <textarea id="message" name="message" rows="5" data-placeholder="ph-donate-message" placeholder="Tell us how you would like to help" required></textarea>
+                        </div>
+                        <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> <span data-translate="send-donation">Send Donation Request</span>
+                        </button>
+                        <div class="form-status" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-about">
+                    <div class="footer-logo"><img src="./images/logo.png" alt="MASaD Logo" class="logo-img"><span>MASaD</span></div>
+                    <p data-translate="footer-slogan">Building Resilient Communities for Sustainable Development.</p>
+                    <h4 class="footer-follow" data-translate="follow-us">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61570262667139&amp;mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="quick-links">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span data-translate="home">Home</span></a></li>
+                        <li><a href="index.html#about"><i class="fas fa-chevron-right"></i> <span data-translate="about-us">About Us</span></a></li>
+                        <li><a href="index.html#programs"><i class="fas fa-chevron-right"></i> <span data-translate="our-programs">Our Programs</span></a></li>
+                        <li><a href="index.html#projects"><i class="fas fa-chevron-right"></i> <span data-translate="our-projects">Our Projects</span></a></li>
+                        <li><a href="index.html#impact"><i class="fas fa-chevron-right"></i> <span data-translate="our-impact">Our Impact</span></a></li>
+                        <li><a href="donate.html"><i class="fas fa-chevron-right"></i> <span data-translate="donate-now">Donate Now</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="contact-info">Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-translate="baidoa-somalia">Baidoa, Somalia</span></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+252615833023" dir="ltr">+252615833023</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info.masad01@gmail.com">info.masad01@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="newsletter">Newsletter</h3>
+                    <p data-translate="newsletter-text">Subscribe to our newsletter for updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" data-placeholder="email-placeholder" placeholder="Your email" aria-label="Email">
+                        <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p data-translate="copyright">Â© 2026 Mubarak Association for Sustainable and Development (MASaD). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <select id="languageSelect" class="lang-dropdown">
+            <option value="en">English</option>
+            <option value="so">Somali</option>
+            <option value="ar">العربية</option>
+        </select>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
